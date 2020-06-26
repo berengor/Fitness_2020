@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!--FIXME удаляй все лишнее-->
   <!--  <meta http-equiv="Refresh" content="2"/>-->
   <meta charset="UTF-8">
   <title>Fitness</title>
@@ -8,9 +9,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!--FIXME тут скорее лучше поменять на див, так как это более глобальная штука (возможно мой косяк)-->
+<!--http://htmlbook.ru/blog/strukturnye-elementy-stranicy-->
+<!--FIXME Отступ от края...-->
 <section class="wrapper">
   <header class="mb-1">
     <img class="logo" src="img/logo.png" alt="logo">
+    <!--FIXME я немного провтыкал, посмотри чего не хватает https://developer.mozilla.org/ru/docs/Web/HTML/Element/nav-->
     <nav class="nav">
       <li><a href="#">Главная</a></li>
       <li><a href="#">Товары</a></li>
@@ -18,9 +23,11 @@
       <li><a href="#">Контакты</a></li>
     </nav>
   </header>
-
+<!--FIXME тут немного запутано, клас меин, но у тебя ниже тег меин. Может придумать название получше?-->
+  <!--FIXME вот тут неплохо будет смотреться тег http://htmlbook.ru/html/section-->
   <div class="main">
     <aside>
+      <!--FIXME аналогично к коменту выше-->
       <nav class="menu">
         <li><a href="#">Ноутбуки</a></li>
         <li><a href="#">Планшеты</a></li>
@@ -35,6 +42,7 @@
         <img class="img" src="img/bike.png" alt="bike">
       </div>
       <div class="content">
+        <!--FIXME p - вот то место где идеально он стал), а это тебе понадобиться http://htmlbook.ru/faq/kak-mne-dlya-kazhdogo-abzatsa-dobavit-otstup-pervoy-stro -->
         <p>
           Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є,
           фактично,
@@ -57,6 +65,7 @@
   </div>
 
   <footer>
+    <!--FIXME аналогично-->
     <nav class="footer">
       <li><a href="#">Главная</a></li>
       <li><a href="#">Товары</a></li>
@@ -64,6 +73,7 @@
       <li><a href="#">Контакты</a></li>
     </nav>
     <div>
+      <!--FIXME p - лишний тег-->
       <p>2014 &copy All rights reserved</p>
     </div>
   </footer>

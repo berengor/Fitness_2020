@@ -11,16 +11,17 @@ html. body {
 .logo {
   margin-bottom: 40px;
 }
-
+/*FIXME это врядле к хедеру относиться*/
 .wrapper {
   margin: 0 auto;
   max-width: 1060px;
   padding: 50px 40px 25px 40px;
   border-left: 1px solid silver;
   border-right: 1px solid silver;
+  /*https://www.cssmatic.com/box-shadow - часто пользуюсь этой штукой*/
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
+/*FIXME думаю что изначально это должно быть mb-4, и вынеси выше, ибо это глобальный клас*/
 .mb-1 {
   margin-bottom: 40px;
 }
@@ -28,7 +29,7 @@ html. body {
 li {
   list-style: none;
 }
-
+/*FIXME если текст будет больше 100px? Здесь лучше юзать min-width + text-align: center*/
 .nav li a {
   display: block;
   width: 100px;
@@ -44,7 +45,7 @@ li {
   display: flex;
   background: linear-gradient(to top, #5e5e5e, #454444);
 }
-
+/*FIXME чет далеко полез, врапер у тебя считай корень, думаю можно и без этого, ну или хедер здесь указать*/
 .wrapper .nav a:hover {
   background: linear-gradient(to top, #2e2e2e, #4a4a4a);
   border-left: 1px solid #838383;
@@ -52,7 +53,7 @@ li {
 }
 
 /*MAIN*/
-
+/*FIXME а тут действительно лучше розделить (добавить в начале) header / content / footer */
 .menu li {
   display: flex;
   border: 1px solid grey;
@@ -63,7 +64,7 @@ li {
 .menu li:nth-child(6){
   border-bottom: 1px solid grey;
 }
-
+/*FIXME тут лучше зедать 1 раз размер для блока меню, я вложености пусть тянуться по шижине, чем отдельно каждому ребенку*/
 .menu li a {
   width: 200px;
   color: grey;
@@ -92,12 +93,14 @@ aside {
   margin: 0 auto;
   padding: 40px 80px;
 }
-
+/*FIXME лучше укажи марджин от велика такойже как и от бокового меню, паддинг по бокам - норм, марджин в низ, как у бокового меню*/
 .content {
   padding: 40px 25px 25px 25px;
 }
 
 /*FOOTER*/
+/*FIXME в таких случиях лучше пользоваться margin-bottom у контента, а вооб*/
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -105,11 +108,12 @@ footer {
   margin-top: 40px;
   padding: 10px;
 }
-
+/* FIXME footer-nav если по верстке посмотреть, то это должно быть меню */
 .footer {
   display: flex;
 }
-
+/*FIXME у тебя постоянно указываеться font-size: 15px может лучше задать это свойство глобально, по умолчанию?*/
+/*FIXME поставь display: block и поймешь что тут не чисто ), + text-align: center, или убрать width*/
 .footer li a {
   width: 100px;
   color: black;
@@ -117,7 +121,7 @@ footer {
   text-decoration: none;
   padding: 10px 20px;
 }
-
+/*FIXME background: #e1e1e1; - не вижу что б что-то менялось*/
 .footer a:hover {
   background: #e1e1e1;
   text-decoration: underline;
